@@ -1,0 +1,36 @@
+<!-- WAHF accepting an integer having exactly 4 digits.
+nput should not accept character  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fo1(){
+            pat=/^\d+$/
+            obj=document.f1.upass.value;
+            if(obj.length!=4){
+                alert('Lengthshould be 4')
+                return false
+            }
+            if(!pat.test(obj)){
+                alert('Character  nto allowed')
+                return false
+            }else{
+                alert('Accepted')
+                return true
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="f1" onsubmit="return fo1()">
+        Enter Username:
+        <input type="text" name="uname" >
+         Password:
+         <input type="password" name="upass" >
+         <input type="submit" value="SUBMIT">   
+        </form>
+</body>
+</html>

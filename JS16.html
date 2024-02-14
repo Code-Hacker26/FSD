@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>function fun(){
+        var pat = /^\d{4,6}$/;
+        var u = document.getElementById("id").value;
+        // if((u.length!=4 && u.length!=6)){
+        //     alert("username must be 4 digits");
+        // }
+       if(!pat.test(u)){
+            alert("username must not contain chars");
+        }
+        if(pat.test(u)){
+            alert("pattern is matched");
+        }
+    }</script>
+    <input type="text" id = 'id'/>
+    <button onclick="fun()">submit</button>
+</body>
+</html>

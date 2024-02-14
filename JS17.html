@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>function fun(){
+        var user = /^\_|^\@|^[0-9]/;
+       var pass=  /^\d{6,12}$/
+        var u = document.getElementById("id").value;
+        if(user.test(u)){
+            
+            var v = document.getElementById("id1").value;
+        if(pass.test(v)){
+            alert("pattern is matched");
+        }
+        else{
+            alert("pattern is not matched");
+        }
+        }
+        else{
+            alert("pattern is not matched");
+            
+        }
+        
+    }</script>
+   Username: <input type="text" id = 'id'/> <br> <br>
+   Password : <input type="text" id = 'id1'/> <br> <br>
+    <button onclick="fun()">submit</button>
+</body>
+</html>

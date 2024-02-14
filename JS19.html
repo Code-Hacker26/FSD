@@ -1,0 +1,31 @@
+<!-- 
+    WAJS to design a login form having usrname,password,submit button.
+    After clicki submir it should jump to next html page only if password has min 6 letters
+    There is no copnstrin in usrname
+    Stick on same page in case of incorrect input
+
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         function validateForm() {
+            let x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+            alert("Name must be filled out");
+            return false;
+            }
+      }
+    </script>
+   
+ </head>
+ <body>
+    <form name="myForm"  onsubmit="return validateForm()" method="post">
+        Name: <input type="text" name="fname" id="uname">
+        <input type="submit" value="Submit" action>
+        </form>
+ </body>
+ </html>

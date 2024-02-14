@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function etest(){
+            u=document.fe.uname.value;
+            m=document.fe.mob.value;
+            e=document.fe.uemail.value;
+
+            alert(u)
+            alert(e);
+            pat_u=/^[A-Za-z]+$/
+            pat_m=/^\d{10}$/
+            pat_e=/^\w+([\._]?\w+)*@\w+([\._]?\w{2,3})(\.\w{2,3})$/
+
+            if(!pat_u.test(u)){
+                alert('The Name must contain Alphabet only')
+                return false
+            }else if(!pat_m.test(m)){
+                alert('The Mo   bile length should be 10 only')
+                return true
+            }else if(!pat_e.test(e)){
+                alert('The Email is not statisfying Conditions')
+                return false;
+            }else{
+                alert('Accepted !!!')
+                return true;
+            }
+        }
+    </script>
+</body>
+<form action="#" onsubmit="return etest()" name="fe">
+    Name:<input type="text" id="uname">
+    Mobile:<input type="number" id="mob">
+    Email:<input type="email" id="uemail">
+    <input type="submit" value="SUBMIT">
+</form>
+</html>

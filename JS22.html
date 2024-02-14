@@ -1,0 +1,41 @@
+<!-- 
+    to validate uname and password satisfy following condition length of passwrd must be between 6-12 car
+    uname must not start with _,@,ny number
+    both mustnot be blank
+    form must not submit in invalid situtaion
+
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sat(){
+            ob2=document.f1.upass.value;
+            ob1=document.f1.uname.value;
+            pat=/^[_@0-9]/
+            if(ob2.length>12 || ob2.length<6){
+                alert('Length between 6 and 12')
+                return false
+            }else if(pat.test(obj1) || obj1.length<=0){
+                alert('Uname should not start with _,@ or no.')
+                return  false
+            }else{
+                alert('Accepted')
+                return true
+            }
+        }
+    </script>
+ </head>
+ <body>
+    <form name="f1" onsubmit="return sat()">
+        Enter Username:
+        <input type="text" name="uname" >
+         Password:
+         <input type="password" name="upass" >
+         <input type="submit" value="SUBMIT">   
+        </form>
+ </body>
+ </html>

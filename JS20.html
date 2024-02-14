@@ -1,0 +1,38 @@
+<!-- Login form using HTML and JS with following valiatio on password field
+Min length of password must be of 8 charactrs .
+It should have some special charater form must not submit if it is unable  to satisfy given condition
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function login(){
+            pat=/\W/
+            obj=document.f1.i2.value;
+            if(obj.length<8){
+                alert('Cant Submit password length less than 8')
+                return false;
+            }else if(!pat.test(obj)){
+                alert('Special Character Needed')
+                return false
+            }else{
+                alert('Submitted')
+                return true;
+            }
+        }
+    </script>
+ </head>
+ <body>
+    <form name="f1" onsubmit="return login()">
+    Enter Username:
+    <input type="text" name="uname" id="i1">
+     Password:
+     <input type="password" name="upass" id="i2">
+     <input type="submit" value="SUBMIT">   
+    </form>
+    
+ </body>
+ </html>
