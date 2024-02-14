@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(obj1){
+            obj1.color='yellow'
+        }
+        function fun2(obj2){
+            obj2.color='black'
+        }
+
+        function time(){
+            var d=new Date()
+            dd=d.getDate()
+            dt=d.getTime()
+            document.write(dd+"<br>")
+            document.write(dt)
+        }
+
+        function red(){
+            r=document.getElementById('change')
+            r.bgColor='red';
+        }
+
+        function green(){
+            r=document.getElementById('change')
+            r.bgColor='green';
+        }
+    </script>
+</head>
+<body id="change">
+    <div style="width: 30%;height: 20%;border: 2pxsolid green; background-color: pink; " onmouseover="this.style.color='yellow'" onmouseout="this.style.color='black'">This is Heading</div>
+    <div>
+        <input type="button" onclick="time()" value="Time">
+        <input type="button" onclick="red()" value="Red">
+        <input type="button" onclick="green()" value="Green">
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function book(title,author){
+            this.t=title;
+            this.a=author;
+            this.m=add
+        }
+        function add(amount){
+            this.price=amount;
+        }
+
+        var novel=new Object()
+        novel.t='FSD'
+        novel.a='TIM'
+
+        function Math1(x,y){
+            document.write(Math.pow(x,y))
+            this.ab=parseFloat("-"+x+".90")
+            document.write(Math.abs(parseFloat("-"+x+".90")))
+            document.write(Math.sqrt(x))
+            document.write(Math.ceil(this.ab))
+            document.write(Math.floor(this.ab))
+        }
+
+        function String1(s){
+            document.write(s.charAt(2))
+            document.write(s.charCodeAt(2))
+            document.write(s.concat('Hani'))
+            document.write(s.indexOf('is'))
+            document.write(s.lastIndexOf('is'))
+            document.write(s.toUpperCase())
+            document.write(s.toLowerCase())
+            document.write(s.split(" "))
+            document.write(s.substr(2,5))
+            document.write(s.substring(2,7))
+            document.write(s.replace('is','Byeee'))
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var b=new book('FSD','TIM');
+        b.m(1000)
+        document.write(b.t+'<br>');        
+        document.write(b.a+'<br>');
+        document.write(b.price+'<br>');        
+        document.write(novel.t+'<br>');        
+        document.write(novel.a+'<br>');        
+
+        Math1(2,3)
+        String1('This is demo')
+
+
+
+    </script>
+    
+</body>
+</html>

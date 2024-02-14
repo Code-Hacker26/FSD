@@ -1,0 +1,29 @@
+<!-- to take 2 text field and 1 add btn 
+by clicking add btn the add of 2 no should be printed on same document -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            pinput=document.getElementsByClassName('input')
+            sum=0
+            for(i=0;i<pinput.length;i++){
+              sum+=parseInt(pinput[i].value)  
+            }
+            pc=document.getElementById('pid')
+            pc.innerHTML= ('Ans is= '+(sum))
+        }
+    </script>
+</head>
+<body>
+    <input type="text" class="input">
+    <input type="text"  class="input"  >
+    <p id="pid">
+        <input type="button" onclick="add()" value="ADD">
+    </p>
+    
+</body>
+</html>

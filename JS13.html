@@ -1,0 +1,20 @@
+<!-- 
+    WAS to make a body tag work like a text area
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function note(object){
+            object.innerHTML+=(String.fromCharCode(event.keyCode))
+        }
+    </script>
+</head>
+<body onkeypress="note(this)">
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!-- sign joining dat 3 empoyee and ther  name to determine whi should be promoted to next position according to seneority -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function promotion(d1,d2,d3){
+            var dt1=d1.getTime()
+            var dt2=d2.getTime()
+            var dt3=d3.getTime()
+            return Math.min(dt1,dt2,dt3)
+        }
+    </script>
+</head>
+<body>
+    <script>
+    var dt1 = new Date();
+    var dt2 = new Date();
+    var dt3 = new Date();
+
+   
+    dt1.setFullYear(2023); 
+    dt1.setMonth(10); 
+    dt1.setDate(20); 
+
+    dt2.setFullYear(2023); 
+    dt2.setMonth(10); 
+    dt2.setDate(21); 
+
+    dt3.setFullYear(2023); 
+    dt3.setMonth(10);
+    dt3.setDate(22); 
+        var promoted=promotion(dt1,dt2,dt3)
+        if (promoted==dt1.getTime()){  document.write('The person promoted is 1')}
+        else if(promoted==dt2.getTime()){document.write('The person promoted is 2')}
+        else {document.write('The person promoted is 3')}
+      
+    </script>
+    
+</body>
+</html>

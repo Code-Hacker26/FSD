@@ -1,0 +1,25 @@
+<!-- write a js to assign a string having 2 -3 sentences convert the entire string in capitalixe mode after clicking a button -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function capital(){
+            cap=document.getElementsByTagName("div")
+            for(i=0;i<cap.length;i++){
+                cap[i].style.textTransform='capitalize'
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptas dolores eos?
+        
+    </div>
+    <input type="button" onclick="capital()" value="Capital">
+</body>
+</html>
